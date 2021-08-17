@@ -1,0 +1,63 @@
+* {
+   margin: 0;
+   padding: 0;
+   /*отключаем все внешние и внутренние отступы*/
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.header {
+   background-color: #635854;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+   max-width: 1280px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar_menu {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.navbar_item {
+   margin-right: 80px;
+   margin-right: 80px;
+
+}
+
+.navbar_link {
+   text-decoration: none;
+   color: #fff;
+}
+
+.navbar_contacts {
+   text-align: right;
+}
+
+.navbar_text {
+   display: block;
+   /*делаем строчный элемент блочным*/
+   font-size: 14px;
+   color: #fff;
+   margin-bottom: 4px;
+}
+
+.navbar_phone {
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: bold;
+   line-height: 20px;
+   color: #fff;
+}
