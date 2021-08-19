@@ -1,3 +1,12 @@
+@font-face {
+   font-family: "Bebas Neue";
+   src: local("Bebas Neue Regular Regular"), local("BebasNeueRegular"),
+      url("../fonts/BebasNeueCyrillic.woff2") format("woff2"), url("../fonts/BebasNeueCyrillic.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -6,14 +15,14 @@
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
 }
 
 .header {
    background-color: #635854;
    padding-top: 12px;
    padding-bottom: 12px;
-   border-bottom: 4px solid #3596F5;
+   border-bottom: 4px solid #3596f5;
 }
 
 .navbar {
@@ -34,7 +43,6 @@ body {
 .navbar_item {
    margin-right: 80px;
    margin-right: 80px;
-
 }
 
 .navbar_link {
@@ -60,4 +68,72 @@ body {
    font-weight: bold;
    line-height: 20px;
    color: #fff;
+}
+
+.main {
+   max-width: 1280px;
+   margin: auto;
+   margin-top: 54px;
+   display: flex;
+}
+
+.home_img path {
+   opacity: 0;
+   cursor: pointer;
+}
+
+.home_img path:hover {
+   opacity: 1;
+}
+
+.main_info {
+   flex-grow: 1;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.main_title {
+   margin: 0;
+   font-family: "Bebas Neue Cyrillic", sans-serif;
+   font-weight: 300;
+   font-size: 37px;
+   line-height: 44px;
+   color: #635854;
+   text-transform: uppercase;
+}
+
+.counter_group {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.counter_button {
+   background-color: #fff;
+   border: none;
+   cursor: pointer;
+}
+
+.counter {
+   color: #635854;
+   font-size: 124px;
+   font-family: "Bebas Neue Cyrillic", sans-serif;
+   margin-top: 10px;
+}
+
+.counter_down {
+   transform: rotateX(180deg);
+}
+
+.button_primary {
+   background: #3596f5;
+   color: #fff;
+   font-family: "Bebas Neue Cyrillic", sans-serif;
+   border-radius: 6px;
+   border: #3596f5;
+   padding: 16px 36px;
+   cursor: pointer;
 }
